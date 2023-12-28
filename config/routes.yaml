@@ -1,0 +1,32 @@
+product_add:
+    path: /products/add
+    controller: App\Controller\ProductController::add
+    methods: PUT
+product_view:
+    path: /products/view/{id}
+    controller: App\Controller\ProductController::view
+    methods: GET
+product_list:    
+    path: /products/list/{page}
+    controller: App\Controller\ProductController::list
+    methods: GET
+product_delete:    
+    path: /products/delete/{id}
+    controller: App\Controller\ProductController::delete
+    methods: DELETE
+product_price_add:
+    path: /products-prices/add
+    controller: App\Controller\ProductPriceController::add
+    methods: PUT
+product_price_view:
+    path: /products-prices/view/{id}
+    controller: App\Controller\ProductPriceController::view
+    methods: GET
+product_price_list:    
+    path: /products-prices/list/{productId}
+    controller: App\Controller\ProductPriceController::list
+    methods: GET
+product_price_delete:    
+    path: /products-prices/delete/{id}
+    controller: App\Controller\ProductPriceController::delete
+    methods: DELETE
