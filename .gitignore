@@ -1,0 +1,6 @@
+/bin
+/var
+/public
+/vendor
+/.vagrant
+/composer.phar
